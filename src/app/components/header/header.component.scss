@@ -1,0 +1,94 @@
+header{
+    padding-top:70px;
+    height: 70vh;
+    background:#f50;
+    .slide{
+        height: 500px;
+        position: relative;
+        width: 100%;
+        .info{
+            position: absolute;
+            z-index: 99;
+            top:150px;
+            left:100px;
+            width:40%;
+            @media(min-width:768px) and (max-width:990px){
+                width:60%;
+            }
+            @media(max-width:767px){
+                width:100%;
+                left:15px;
+            }
+            h1{
+               text-transform: uppercase;
+               margin:0 0 3px 0;
+               font-weight: bold;
+            }
+            span{
+                text-transform: uppercase;
+            }
+            p{
+                margin-top:16px;
+                line-height: 1.6;
+                font-size: 16px;
+            }
+            .cont_button{
+                margin-top:25px;
+                position: relative;
+                padding: 2px;
+                background:#fff;
+                border:1px solid #A9B35D;
+                width:125px;
+                &:hover{
+                    border: 1px solid #333333;
+                }
+                button{
+                    padding:8px 22px;
+                    background:#A9B35D;
+                    color:#fff;
+                    border:none;
+                    text-transform: capitalize;
+                    &:hover{
+                        background:#333333;
+                        &::after{
+                            border: 1px solid #333333; 
+                        }
+                    }
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 125px;
+                        height: 46px;
+                        background: none;
+                        border: 1px solid #a9b35d;
+                        position: absolute;
+                        top:2px;
+                        left:2px;
+                    }
+                }
+            }
+     
+        }
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+   
+}
+
+
+
+.owl {
+    
+    .owl-theme .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        background: #D6D6D6;
+        display: block;
+        transition: all .2s ease;
+        border-radius: 30px;
+    }
+ }
+

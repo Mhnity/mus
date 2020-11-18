@@ -1,0 +1,596 @@
+
+/**************************************  start new flowers  *****************************/
+.new_flowers{
+   margin-top:200px;
+   .item{
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      margin-top:20px;
+      &:hover{
+         .over_1{
+            animation: fade_out1 .5s ease-in-out ;
+         }
+         .over_2{
+            animation: fade_out2 .5s ease-in-out ;
+         }
+      }
+      .cont_img{
+         width:100%;
+         img{
+            width:100%;
+            height:100%;
+         }
+      }
+      .info{
+         font-family: "Playfair Display", serif;
+         position: absolute;
+         z-index: 55;
+         top:90px;
+         right: 25px;
+         text-transform: uppercase;
+         h2{
+            color:#333333;
+            font-weight: bold;
+            @media(max-width: 1200px){
+               font-size: 25px;
+            }
+         }
+         .arr{
+            @media (max-width:1200px) {
+               position: relative;
+               right: -30px;
+            }
+         }
+         p{
+            padding-left: 45px;
+            color:#999;
+            font-size: 20px;
+            margin-top:0;
+         }
+      }
+   }
+}
+
+/**************************************  end new flowers  *****************************/
+
+
+
+/**************************************  start deals  *****************************/
+.deals{
+   margin-top:150px;
+   .deal{
+      margin-top:70px;
+      .cont_img{
+         width:100%;
+         height: 100%;
+         img{
+            width:100%;
+            height: 100%;
+         }
+      }
+      .info{
+         padding:100px 0 0 20px;
+         @media(max-width:990px){
+            padding-top:20px;
+         }
+      }
+      .stars{
+         i{
+            font-size: 14px;
+            margin:0 3px;
+         }
+      }
+      .name{
+         text-transform: capitalize;
+         font-weight: bold;
+         font-family: "Playfair Display", serif;
+         margin:10px 0;
+      }
+      .salary{
+         font-family: "Playfair Display", serif;
+         span{
+            &:first-of-type{
+               color:#d56aeb;
+               font-size: 22px;
+               font-weight: bold;
+            }
+            &:last-of-type{
+               text-decoration: line-through;
+               margin-left: 20px;
+            }
+         }
+      }
+      p{
+         line-height: 1.4;
+         font-size: 18px;
+         margin:20px 0;
+         font-family: "Playfair Display", serif;
+         color:#999;
+      }
+   }
+}
+/**************************************  end deals  *****************************/
+
+
+
+/**************************************  start the best  ************************/
+.the_best{
+   margin-top:100px;
+   padding:50px 0;
+   .items{
+      .item{
+         box-shadow: 1px 1px 14px 2px #999999ab;
+         border-radius: 5px;
+         position: relative;
+         overflow: hidden;
+         margin:50px 10px 10px  10px;
+         cursor: pointer;
+         &:hover{
+            .img-2{
+               left:0 !important;
+            }
+            .overlay{
+               left: 0 !important;
+            }
+         }
+         .new{
+            position: absolute;
+            top: 2px;
+            left: -18px;
+            display: inline-block;
+            width: 60;
+            background: #d56aeb;
+            text-align: center;
+            transform: rotate(-39deg);
+            padding: 1px 23px;
+            color: #f1f1f1;
+            z-index: 999;
+         }
+         .cont_img{
+            width:100%;
+            height: 230px;
+            position: relative;
+            img{
+               width:100%;
+               height: 100%;;
+            }
+            .img-2{
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               top:0;
+               left:-100%;
+               transition: all .5s ease-in-out;
+            }
+            .overlay{
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               top:0;
+               left:-100%;
+               transition: all .5s ease-in-out;
+               background: rgba(0,0,0,.3);
+               ul{
+                  text-align: right;
+                  margin-top:30px;
+                  li{
+                     width:35px;
+                     height: 35px;
+                     border-radius: 50%;
+                     margin-left: auto;
+                     background:#fff;
+                     margin-top:10px;
+                     margin-right: 10px;
+                     text-align: center;
+                     line-height: 35px;
+                     cursor: pointer;
+                     &:hover{
+                        background:#d56aeb;
+                        color:#fff;
+                     }
+                  }
+               }
+            }
+         }
+         .description {
+            padding:15px;
+            background:#fff;
+            >div{
+               display: flex;
+               justify-content: space-between;
+            }
+            .div_1{
+               .stars{
+                  i{
+                     font-size: 11px;
+                     margin:0 2.5px;
+                     color:#f50;
+                  }
+               }
+               .salary{
+                  color:#d56aeb;
+                  font-size: 18px;
+                  font-weight: bold;
+               }
+            }
+            .div_2{
+               margin:10px 0;
+               .name{
+                  text-transform: capitalize;
+                  font-weight: bold;
+                  &:hover{
+                     color:#d56aeb !important;
+                  }
+               }
+               .salary{
+                  text-decoration: line-through;
+                  font-size: 15px;
+               }
+            }
+            button{
+               display: inline-block;
+               width:100%;
+               border:none;
+               outline:none;
+               background:#F5F5F5;
+               margin-top:15px;
+               padding:10px;
+               text-transform: uppercase;
+               transition: all .4s ease-in-out;
+               &:hover{
+                  background:#d56aeb !important;
+                  color:#fff;
+               }
+               i{
+                  margin-right: 15px;
+               }
+            }
+
+         }
+      }
+   }
+}
+/**************************************  end the best  *************************/
+
+
+/**************************************  start middel_img  *************************/
+.middel_img{
+   margin-top:50px;
+   .item{
+      position: relative;
+      .cont_img{
+         position: relative;
+         overflow: hidden;
+         width:100%;
+         height: 100%;
+         @media(max-width:991px){
+            height: 300px;
+         }
+      
+         img{
+            width:100%;
+            height: 100%;
+         }
+         &:hover{
+            .over_1{
+               animation: fade_out1 1s ease-in-out ;
+            }
+            .over_2{
+               animation: fade_out2 1s ease-in-out ;
+            }
+         }
+         img{
+            width:100%;
+            height: 100%;
+            &:hover{
+               cursor: pointer;  
+            }
+         }
+      }
+      .info{
+         width:100%;
+         position: absolute;
+         z-index: 22;
+         top:45%;
+         font-family: "Playfair Display", serif;
+         text-transform: uppercase;
+         text-align: center;
+         h2{
+            font-weight: bold;
+            @media(max-width: 767px){
+               font-size: 26px;
+            }
+         }
+         p{
+            color:#999;
+         }
+      }
+   }
+}
+/**************************************  end middel_img   *************************/
+
+
+
+/**************************************  start appoinment    *************************/
+.appoinment{
+   margin-top:200px;
+   overflow: hidden;
+
+   @media(max-width:991px){
+      margin-top:50px;
+   }
+   .info{
+      padding-top:100px;
+      font-family: "Playfair Display", serif;
+      
+      .description{
+         text-align: center;
+         margin-top: 40px;
+         h2{
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color:#333333;
+         }
+         P{
+            padding:0 50px;
+            color:#999;
+            font-size: 17px;
+            span{
+               color:#78B004;
+               font-size: 16px;
+            }
+         }
+      }
+      .cont_button{
+         margin:auto;
+         top:20px;
+         width:193px;
+         background: #fff;
+         border:1px solid #333333;
+         &:hover{
+             border: 1px solid #d56aeb;
+         }
+         button{
+             background:#333333;
+             color:#fff;
+             &:hover{
+                 background:#d56aeb;
+                 &::after{
+                     border: 1px solid #d56aeb; 
+                 }
+             }
+             &::after{
+                 content: '';
+                 display: block;
+                 width: 193px;
+                 border: 1px solid #333;
+             }
+         }
+      }
+      
+   }
+   .girl{
+       padding:35px;
+      @media(max-width: 400px){
+         padding:15px;
+      }
+   }
+   .main_cont{
+      border:1px solid #99999973;
+      padding:0px;
+      @media(max-width:991px){
+         margin-top:40px;
+      }
+      &:hover{
+         cursor: pointer;
+         border:1px dashed #78B004;
+      }
+      .cont_img{
+         width:100%;
+         height: 550px;
+         background:#F1F6F9;
+         padding:10px;
+         position: relative;
+         left:20px;
+         top:20px;
+         @media(max-width: 400px){
+            left:10px;
+             top:10px
+         }
+         @media(max-width:767px){
+            height: 400px;
+         }
+         img{
+            width:100%;
+            height:100%;
+            border:1px solid #78B004 ;
+         }
+         .inside_border{
+            border:3px solid #78B004;
+            position: absolute;
+            width:94%;
+            height: 94%;
+            top:3%;
+            left:3%;
+            @media(max-width: 400px){
+               width:92%;
+               height: 94%;
+               top:3%;
+               left:4%;
+            }
+            &:hover{
+               border:3px dashed #78B004;
+               width:92%;
+               height: 92%;
+               top:4%;
+               left:4%;
+            }      
+         }
+      }
+   }
+}
+/**************************************  end appoinment   *************************/
+
+
+/**************************************  end galary   *************************/
+.galary{
+   margin-top:150px;
+   @media(max-width:767px){
+      margin-top: 100px;
+   }
+   .row{margin-top:50px;}
+   .item{
+      margin-top:20px;
+      .cont_img{
+         width:100%;
+         height: 200px;
+         overflow: hidden;
+         cursor: pointer;
+         img{
+            cursor: pointer;
+            width:100%;
+            height: 100%;
+         }
+      }
+   }
+}
+/**************************************  end galary   *************************/
+
+
+/**********************************  start my fromwork *******************/
+// start main_button
+.cont_button{
+   margin-top:35px;
+   position: relative;
+   padding: 2px;
+   background:#fff;
+   width: 123px;
+   border:1px solid #d56aeb;
+   &:hover{
+       border: 1px solid #333333;
+   }
+   button{
+       padding:8px 21.5px;
+       background:#d56aeb;
+       color:#fff;
+       border:none;
+       text-transform: capitalize;
+       &:hover{
+           background:#333333;
+           &::after{
+               border: 1px solid #333333; 
+           }
+       }
+       &::after{
+           content: '';
+           display: block;
+           width: 124px;
+           height: 46px;
+           background: none;
+           border: 1px solid ;
+           position: absolute;
+           top:2px;
+           left:2px;
+           border: 1px solid #d56aeb;
+       }
+   }
+}
+
+// start main_title
+.main_title{
+   p{
+      font-family: 'Satisfy', cursive;
+      margin:0;
+      font-size: 23px;
+      font-weight: bold;
+      color:#d56aeb;
+   }
+   h2{
+      font-weight: bold;
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      margin-bottom: 0;
+   }
+   .under{
+      span{
+         display: inline-block;
+         width:50px;
+         height: 2px;
+         background:#d56aeb;
+         margin:0 5px;
+      }
+      i{
+         color:#d56aeb;
+         margin-top:5px;
+         position: relative;
+         top:5px;
+         font-size: 25px;
+         animation: rotate 1.5s linear infinite;
+      }
+   }
+}
+
+// start rotate 
+@keyframes rotate{
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(180deg);
+   }
+}
+
+//sart fadein out overlay
+.over_1{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   bottom:100%;
+   right:100%;
+   z-index: 55;
+   background:rgba(0,0,0,.5);
+   cursor: pointer;
+}
+.over_2{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top:100%;
+   left:100%;
+   z-index: 55;
+   background:rgba(0,0,0,.5);
+   cursor: pointer;
+}
+@keyframes fade_out1{
+   0%{
+      bottom:100%;
+      right:100%;
+      opacity: 1;
+      
+   }
+   90%{
+      bottom:0;
+      right:0;
+   }
+   100%{
+      opacity: 0;
+   }
+}
+@keyframes fade_out2{
+   0%{
+      top:100%;
+      left:100%;
+      opacity: 1;
+      
+   }
+   90%{
+      top:0;
+     left:0;
+   }
+   100%{
+      opacity: 0;
+   }
+}
+/************************************* end my fromwork **************/

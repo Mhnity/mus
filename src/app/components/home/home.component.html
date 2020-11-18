@@ -1,0 +1,206 @@
+
+<div>
+    <app-header></app-header>
+</div>
+
+<!--------------------------------------------- start new flowers  ------------>
+<section class='new_flowers'>
+   <div class="container">
+       <div class="row">
+           <div class="col-lg">
+               <div class="item wow fadeInLeft"   data-wow-offset='200'>       
+                <div class="cont_img"> <img src="../../../assets/imgs/new_flowers/1.jpg" alt=""></div>
+                <div class="info">
+                    <h2> new flowers </h2>
+                    <p> extra <sub>50</sub>% off</p>
+                </div>
+                <div class="over_1"></div>
+                <div class="over_2"></div>
+            </div>
+           </div>
+
+           <div class="col-lg">
+                <div class="item wow fadeInRight"   data-wow-offset='200'>
+                    <div class="cont_img"> <img src="../../../assets/imgs/new_flowers/2.jpg" alt=""></div>
+                    <div class="info">
+                        <h2 class='arr'> new arrivals </h2>
+                        <p> get up to <sub>50</sub>% off</p>
+                    </div>
+                    <div class="over_1"></div>
+                    <div class="over_2"></div>
+                </div>
+            </div>
+        </div>
+   </div>
+</section>
+<!--------------------------------------------- end new flowers   ------------>
+
+ <!--------------------------------------------- start deals ------------>
+<section class='deals'>
+    <div class="container">
+        <div class="main_title text-center">
+            <p class='top_title'>  </p>
+            <h2> Deals Of The Week </h2>
+            <div class="under"> <span> </span> <i class="fas fa-certificate"></i> <span></span></div>
+        </div>
+        <div class="deal row">
+            <div class="col-lg">
+                <div class="cont_img hvr-curl-top-left ">
+                    <img src="../../../assets/imgs/deals/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="info">
+                    <div class="stars">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h3 class="name"> beauty flower </h3>
+                    <div class="salary"> 
+                        <span><i class="fas fa-dollar-sign"></i>16.01 </span> 
+                        <span><i class="fas fa-dollar-sign"></i>23.90</span>
+                    </div>
+                    <p class='lead'>
+                        You have a custom printing creative project?
+                        The vector graphic Mountain fox illustration can be
+                        used for printing purpose on any support, without size limitation
+                    </p>
+                    <div class="cont_button"> <button> shop now </button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+ <!----------------------------------------------------- end deals -------------------->
+
+
+<!--------------------------------------------------- start best sals  ------------------>
+<section class='the_best'>
+    <div class="container">
+        <div class="main_title text-center">
+            <p class='top_title2'>  </p>
+            <h2> best selling products  </h2>
+            <div class="under"> <span> </span> <i class="fas fa-certificate"></i> <span></span></div>
+        </div>
+        <div class="items">
+            <owl-carousel-o [options]="customOptions" >
+                <ng-template carouselSlide *ngFor='let cart of cards; index as i'>
+                  <div class="slide">
+                    <div class="item">
+                        <span class='new'> {{cart.new_sale}} </span>
+                        <div class="cont_img">
+                            <img src="{{cart.img}}" alt="">
+                            <div class="overlay">
+                                <ul class='list-unstyled'>
+                                    <li><i class="fas fa-shopping-basket"></i></li>
+                                    <li><i class="fas fa-heart"></i></li>
+                                    <li><i class="far fa-eye"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <div class='div_1'>
+                                <div class="stars">  
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="salary">  <i class="fas fa-dollar-sign"></i> {{cart.new_salary}}</div>
+                            </div>
+                            <div class='div_2'>
+                                <div class="name"> {{cart.name}}</div>
+                                <div class="salary"> <i class="fas fa-dollar-sign"></i> {{cart.old_salary}}</div>
+                            </div>
+                            <button> <i class="fas fa-shopping-basket"></i> add to cart </button>
+                        </div>
+                    </div>
+                  </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</section>
+<!----------------------------------------------------- end best sals  ------------------->
+
+
+
+<!----------------------------------------------------- start middel img   ------------------->
+<section class='middel_img'>
+   <div class="container">
+        <div class="item text-center wow jackInTheBox" data-wow-offset='250'>
+            <div class="cont_img">
+                <img src="../../../assets/imgs/middel_img/3.jpg" alt="">
+                <div class="over_1"></div>
+                <div class="over_2"></div>
+            </div>
+            <div class="info">
+                <h2> beauty flower </h2>
+                <p> save up to  <sub>50</sub>% off</p>
+            </div>
+        </div>
+   </div>
+</section>
+<!----------------------------------------------------- end middel img   ------------------->
+
+
+
+<!--------------------------------------- start appoinment     ------------------------>
+<section class='appoinment'>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg">
+                <div class="info">
+                    <div class="main_title text-center">
+                        <p class='top_title3'>  </p>
+                        <h2> Appointment </h2>
+                        <div class="under"> <span> </span> <i class="fas fa-certificate"></i> <span></span></div>
+                    </div>
+                    <div class="description">
+                        <h2> want to make a booking or have a qusetion? </h2>
+                        <p class='lead'> Call me: <span>002-6666-8888</span> or fill out our online booking  equiry form and well contact you </p>
+                    </div>
+                    <div class="cont_button"> <button> make an appoinment </button> </div>
+                </div>
+            </div>
+            <div class="col-lg girl">
+                <div class="main_cont">
+                    <div class="cont_img"> 
+                        <img src="../../../assets/imgs/appoinment/girl_bocket.PNG" alt="">
+                        <div class="inside_border"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------------------------- end appoinment    ------------------------>
+
+
+<!--------------------------------------- start galary     ------------------------>
+<section class='galary'>
+    <div class="main_title text-center">
+        <p class='top_title4'>  </p>
+        <h2> Our galary </h2>
+        <div class="under"> <span> </span> <i class="fas fa-certificate"></i> <span></span></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3" *ngFor='let g of galary; index as i'>
+                <div class="item">
+                    <div class="cont_img "> <img class='hvr-grow' src="{{g.img}}" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------------------------- end galary    ------------------------>
+
+<div>
+    <app-footer></app-footer>
+</div>
