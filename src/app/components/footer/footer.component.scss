@@ -1,0 +1,51 @@
+
+@import '../home/home.component.scss';
+
+/*================================= start footer  =======================*/
+footer{
+    background: #081D46;
+    .info{
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+        top:-40px;
+        img{
+            width:200px;
+            height: 50px;
+            border-radius: 15px;
+        }
+     
+        //keywords
+        .keywords{
+            list-style: none;
+            padding:0;
+            margin:20px auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width:350px;
+            li{
+                margin: 0  10px 8px 10px;
+                a{
+                    font-weight: 550;
+                 
+                    color:#fff;
+                    font-size: 18px;
+                   
+                }
+            }
+        }
+        .Copyright{
+            margin: 40px 0 0 0;
+            color: #999;
+            position: relative;
+            top: 50px;
+            a{
+                color:#999;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+}
+/*================================= end  footer   =======================*/

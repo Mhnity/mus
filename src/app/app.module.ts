@@ -11,6 +11,8 @@ import { CovidComponent } from './shard/covid/covid.component';
 import { OstaziComponent } from './shard/ostazi/ostazi.component';
 import { Motanaw3Component } from './shard/motanaw3/motanaw3.component';
 import { NotfoundComponent } from './shard/notfound/notfound.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavComponent } from './components/nav/nav.component';
 
 
 
@@ -24,6 +26,8 @@ import { NotfoundComponent } from './shard/notfound/notfound.component';
     OstaziComponent,
     Motanaw3Component,
     NotfoundComponent,
+    FooterComponent,
+    NavComponent,
 
  
   ],
