@@ -7,9 +7,12 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { NavComponent } from './components/nav/nav.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HeaderComponent } from './components/header/header.component';
+import { CovidComponent } from './shard/covid/covid.component';
+import { OstaziComponent } from './shard/ostazi/ostazi.component';
+import { Motanaw3Component } from './shard/motanaw3/motanaw3.component';
+import { NotfoundComponent } from './shard/notfound/notfound.component';
+
+
 
 
 
@@ -17,9 +20,12 @@ import { HeaderComponent } from './components/header/header.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavComponent,
-    FooterComponent,
-    HeaderComponent
+    CovidComponent,
+    OstaziComponent,
+    Motanaw3Component,
+    NotfoundComponent,
+
+ 
   ],
   imports: [
     BrowserModule,
