@@ -16,16 +16,18 @@ export class NavComponent implements OnInit {
   
     $(function(){
       $('.bars').on('click',function(){
-        $('.ul_list').slideToggle();
-        $('.bars i').toggleClass('change_color')
+        $(this).toggleClass('change_color');
     })
 
       
     /** start go to section **/
       $('.ul_list li').on('click',function(){
+      $('.ul_list').slideToggle()
         $('body,html').animate({
           scrollTop:$($(this).children('a').data('scroll')).offset().top+1
         },1000)
+
+      
       })
     /** end go to section   **/
     })

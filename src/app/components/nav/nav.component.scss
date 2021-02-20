@@ -47,9 +47,10 @@
         cursor: pointer;
         i{
             font-size: 28px;
+            color:$second_color;
         }
         .change_color{
-            color:#fff;
+            color:$second_color;
         }
     }
     .list{
@@ -62,7 +63,7 @@
                 display: none;
                 position: fixed;
                 width:100%;
-                height: 100%;
+                height: 100vh;
                 background: #25222C;
                 color:#fff;
                 text-align: center;
