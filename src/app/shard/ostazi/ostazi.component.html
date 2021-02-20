@@ -1,1 +1,20 @@
-<p>ostazi works!</p>
+<section class="result">
+    <div class="container">
+       <div class="title text-center">
+           <h1>The Results</h1>
+           <p> Orderly is a work in progress, the Invision demo can be seen </p>
+           <button class="effect_button">
+               <a href="http://ostazee.net/#/home"> Go Live Here  </a>
+           </button>
+       </div>
+       <div class="row">
+           <div class="col-lg-6" *ngFor='let img of imgs; index as i'>
+               <div class="item">
+                   <div class="cont_img">
+                       <img src="{{img.img}}" alt="">
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+   </section>

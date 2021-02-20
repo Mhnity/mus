@@ -24,7 +24,6 @@ export class CovidComponent implements OnInit {
       {img:'assets/imgs/shard/covid/14.PNG'},
       {img:'assets/imgs/shard/covid/15.PNG'},
       {img:'assets/imgs/shard/covid/16.PNG'},
-      {img:'assets/imgs/shard/covid/16.PNG'},
     ]
  
   }

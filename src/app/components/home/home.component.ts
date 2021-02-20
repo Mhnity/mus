@@ -26,6 +26,12 @@ export class HomeComponent implements OnInit {
         })
       /** end go to section   **/
 
+      $('.btn_click').on('click',function(){
+        $('html,body').animate({
+          scrollTop:0
+        },50)
+      })
+
 
       $(window).on('scroll',function(){
         if($(this).scrollTop()>1000){

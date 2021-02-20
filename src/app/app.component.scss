@@ -1,0 +1,15 @@
+
+/************************************************ start scroll to top     *****************/
+.scroll_top{
+    position:fixed;
+    bottom:50px;
+    right:20px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+    font-size: 28px;
+    i{
+        color:#081D46;
+    }
+}
+/************************************************ end scroll to top      *****************/
