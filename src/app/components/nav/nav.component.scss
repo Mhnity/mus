@@ -49,6 +49,10 @@
         top:-5px;
         z-index: 99999;
         cursor: pointer;
+        @media(max-width:767px){
+            top:-8px;
+            right: 3px;
+        }
         i{
             font-size: 28px;
             color:$second_color;
